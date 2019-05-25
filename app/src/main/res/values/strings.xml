@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Yolo</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="back_press">Press back again to exist</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_title_1">Type Your Request</string>
+    <string name="slide_desc_1">Easy to find your desired vehicle</string>
+
+    <string name="slide_title_2">Get Free Quote</string>
+    <string name="slide_desc_2">Available quote for you</string>
+
+    <string name="slide_title_3">Book Your Journey</string>
+    <string name="slide_desc_3">Select your favorite car</string>
+</resources>

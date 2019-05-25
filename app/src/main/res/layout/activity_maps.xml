@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment_maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:srcCompat="@drawable/places_ic_search" />
+
+            <TextView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@color/colorCompanyDark"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_current_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where to ?"
+                android:textColor="#585C65"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:onClick="onHome"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_20sdp"
+        android:onClick="onRightDrawer"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_my_location" />
+</FrameLayout>

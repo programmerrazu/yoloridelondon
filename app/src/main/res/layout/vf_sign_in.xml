@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_apps_logo"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:srcCompat="@drawable/app_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_apps_logo"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/bg_round"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Rushow!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Sign in to continue"
+                    android:textColor="@color/bg_view_deep"
+                    android:textSize="@dimen/text_size3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size4"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="xzy@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/bg_view_deep"
+                    android:textSize="@dimen/text_size4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size4"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="******"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bg_view_deep"
+                    android:textSize="@dimen/text_size4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_green"
+                        android:gravity="center"
+                        android:onClick="onLogIn"
+                        android:text="Log In"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size4"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onForgetPassword"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="Forget Password?"
+                        android:textAlignment="center"
+                        android:textColor="@color/bg_view_deep"
+                        android:textSize="@dimen/text_size4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="New User?"
+                        android:textColor="@color/bg_view_deep"
+                        android:textSize="@dimen/text_size4" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:onClick="onGetSignUp"
+                        android:text="Signup"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size4" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
